@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+:root {
+    --primary-color: #000000;
+    --secondary-color-blue: #377DFF;
+    --secondary-color-green: #38CB89;
+    --secondary-color-orange: #FFAB00;
+    --secondary-color-red: #FF5630;
+    --neutral-color-07: #141718;
+    --neutral-color-06: #232627;
+    --neutral-color-05: #343839;
+    --neutral-color-04: #6C7275;
+    --neutral-color-03: #E8ECEF;
+    --neutral-color-02: #F3F5F7;
+    --neutral-color-01: #FEFEFE;
+
+    --container-width: 1120px;
+    --container-padding: 32px;
+}
+
+@theme {
+    --color-primary: var(--primary-color);
+    --color-secondary-blue: var(--secondary-color-blue);
+    --color-secondary-green: var(--secondary-color-green);
+    --color-secondary-orange: var(--secondary-color-orange);
+    --color-secondary-red: var(--secondary-color-red);
+    --color-neutral-01: var(--neutral-color-01);
+    --color-neutral-02: var(--neutral-color-02);
+    --color-neutral-03: var(--neutral-color-03);
+    --color-neutral-04: var(--neutral-color-04);
+    --color-neutral-05: var(--neutral-color-05);
+    --color-neutral-06: var(--neutral-color-06);
+    --color-neutral-07: var(--neutral-color-07);
+
+    --width-container: calc(var(--container-width) + (var(--container-padding) * 2));
+    --padding-container: var(--container-padding);
+    --padding-container-left: calc(100% - (var(--container-width) + (var(--container-padding) * 2)));
+}

@@ -8,7 +8,8 @@ export const Container = ({ className, children, type, ...props }: ComponentProp
             "w-full overflow-x-hidden pl-container-left": type === "left",
             "w-full overflow-x-hidden pr-container-left": type === "right",
             "w-container px-container": type === "default"
-        }
+        },
+        className
     )} {...props}>{children}</div>
 }
 

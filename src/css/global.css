@@ -35,4 +35,5 @@
     --width-container: calc(var(--container-width) + (var(--container-padding) * 2));
     --padding-container: var(--container-padding);
     --padding-container-left: calc(100% - (var(--container-width) + (var(--container-padding) * 2)));
+    --max-width-container: calc(var(--container-width) + (var(--container-padding) * 2));
 }

@@ -10,7 +10,7 @@ export const Sale = () => {
         <Container type="default">
             <Flex justify={"center"} items={"center"} className="gap-3">
                 <Image src={TicketImg} alt="Sale logo" width={24} height={24} />
-                <p className="text-[14px] font-semibold leading-5.5 text-white">
+                <p className="text-[12px] font-semibold leading-5 text-white xl:text-[14px] xl:leading-5.5">
                     30% off storewinde - Limited time!
                 </p>
 

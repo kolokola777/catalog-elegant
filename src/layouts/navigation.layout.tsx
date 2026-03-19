@@ -32,14 +32,18 @@ const menu = [
 ]
 
 export const Navigation = () => {
-    return <nav className="fixed top-10 left-0 right-0 py-4">
+    return <nav className="fixed top-17.5 sm:top-10 left-0 right-0 py-4">
         <Container type="default">
             <Flex justify={"between"} items={"center"}>
-                <Link href={"/"} className="text-[24px] font-medium leading-6 text-primary">
-                    3legant.
-                </Link>
+                <Flex items={"center"} className="gap-1">
+                    <span className="md:hidden">icon</span>
 
-                <Flex className="flex-1 gap-10" justify={"center"}>
+                    <Link href={"/"} className="text-[24px] font-medium leading-6 text-primary">
+                        3legant.
+                    </Link>
+                </Flex>
+
+                <Flex className="flex-1 gap-10 hidden md:flex" justify={"center"}>
                     {
                         menu.map(item => <Link key={item.id} href={item.page} className="inline-flex gap-0.5 items-center">
                             <span>
@@ -53,6 +57,12 @@ export const Navigation = () => {
                         </Link>)
                     }
                 </Flex>
+
+                {/* <Flex>
+                    <Image src={} alt="" />
+                    <Image src={} alt="" />
+                    <Image src={} alt="" />
+                </Flex> */}
             </Flex>
         </Container>
     </nav>

@@ -1,31 +1,36 @@
 import { Container } from "@/components/container"
-import { Flex } from "@/components/flex"
 import { Typography } from "@/components/typography"
-import Link from "next/link"
 import { BestSellerItem } from "./best-seller-item"
 
 export const BestSellerSection = () => {
-    return <section className="pt-12">
-        <Container type="default">
-            <div className="space-y-12">
-                <Typography heading={"h4"}>
-                    Best Seller
-                </Typography>
-                <Flex items={"center"}>
-                    <Link href={"!#"}>
-                        <Flex className="gap-4 gap-y-8 mb-25 flex-wrap" justify={"between"}>
-                            <BestSellerItem />
-                            <BestSellerItem />
-                            <BestSellerItem />
-                            <BestSellerItem />
-                            <BestSellerItem />
-                            <BestSellerItem />
-                            <BestSellerItem />
-                            <BestSellerItem />
-                        </Flex>
-                    </Link>
-                </Flex>
-            </div>
-        </Container>
-    </section>
+    return (
+        <section className="pt-10 sm:pt-12 md:pt-14">
+            <Container type="default">
+                <div className="space-y-6 sm:space-y-8 md:space-y-10">
+
+                    <Typography
+                        heading={"h4"}
+                        className="text-xl sm:text-2xl md:text-3xl"
+                    >
+                        Best Seller
+                    </Typography>
+
+                    <div className="
+                        grid 
+                        grid-cols-2 
+                        sm:grid-cols-3 
+                        md:grid-cols-4 
+                        lg:grid-cols-4 
+                        gap-4 
+                        sm:gap-6
+                    ">
+                        {[...Array(8)].map((_, i) => (
+                            <BestSellerItem key={i} />
+                        ))}
+                    </div>
+
+                </div>
+            </Container>
+        </section>
+    )
 }
